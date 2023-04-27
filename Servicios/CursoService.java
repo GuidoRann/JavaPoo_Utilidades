@@ -11,14 +11,14 @@ public class CursoService {
         String nombreCurso = consola.next();
         System.out.println("Ingrese la cantidad de horas por dia");
         int horasDia = consola.nextInt();
-        System.out.println("Ingres la cantidad de horas por semana");
-        int horasSemana = consola.nextInt();
+        System.out.println("Ingres la cantidad de dias por semana");
+        int diasSemana = consola.nextInt();
         System.out.println("Ingrese el turno: Mañana o Tarde");
         String turno = consola.next();
         System.out.println("Ingrese el precio por hora");
         int precioHoras = consola.nextInt();
         
-        return new Curso(nombreCurso, horasDia, horasSemana, turno, precioHoras);
+        return new Curso(nombreCurso, horasDia, diasSemana, turno, precioHoras);
     }
     
     public void cargarAlumnos(Curso cur){
@@ -33,7 +33,7 @@ public class CursoService {
     }
     
     public void calcularGananciaSemanal(Curso cur){
-        int res = cur.getCantidadHorasPorDia()*cur.getPrecioPorHora()*cur.getCantidadHorasPorSemana()*cur.getAlumnos().length;
+        int res = cur.getCantidadHorasPorDia()*cur.getPrecioPorHora()*cur.getCantidadDiasPorSemana()*cur.getAlumnos().length;
         System.out.println("La ganancia semanal se de: " + res);
     }
     

@@ -126,6 +126,16 @@ public class Main {
        */
        
        // ------------------------ Ejercicio 6 -------------------------------------
+       /*
+       CursoService cs = new CursoService();
+       Curso cur = cs.crearCurso();
+       
+       cs.cargarAlumnos(cur);
+       cs.calcularGananciaSemanal(cur);
+       */
+       
+       // ------------------------ Ejercicio Extra 1 -------------------------------------
+       
        
     }
 

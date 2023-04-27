@@ -1,13 +1,11 @@
-package Servicios;
+ package Servicios;
 
 import java.util.Arrays;
 
 public class ArregloService {
 
     public void inicializarA(double[] a) {
-        for (int i = 0; i < a.length; i++) {
-            a[i] = (int) (Math.random() * 50 + 1);
-        }
+        Arrays.fill(a, Math.random() * 25 + 1);
     }
 
     public void mostrar(double[] a) {

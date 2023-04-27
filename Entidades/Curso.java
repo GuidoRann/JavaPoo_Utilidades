@@ -3,7 +3,7 @@ package Entidades;
 public class Curso {
     private String nombreCurso;
     private int cantidadHorasPorDia;
-    private int cantidadHorasPorSemana;
+    private int cantidadDiasPorSemana;
     private String turno;
     private int precioPorHora;
     private String[] alumnos;
@@ -12,10 +12,10 @@ public class Curso {
         
     }
 
-    public Curso(String nombreCurso, int cantidadHorasPorDia, int cantidadHorasPorSemana, String turno, int precioPorHora) {
+    public Curso(String nombreCurso, int cantidadHorasPorDia, int cantidadDiasPorSemana, String turno, int precioPorHora) {
         this.nombreCurso = nombreCurso;
         this.cantidadHorasPorDia = cantidadHorasPorDia;
-        this.cantidadHorasPorSemana = cantidadHorasPorSemana;
+        this.cantidadDiasPorSemana = cantidadDiasPorSemana;
         this.turno = turno;
         this.precioPorHora = precioPorHora;
     }
@@ -36,12 +36,12 @@ public class Curso {
         this.cantidadHorasPorDia = cantidadHorasPorDia;
     }
 
-    public int getCantidadHorasPorSemana() {
-        return cantidadHorasPorSemana;
+    public int getCantidadDiasPorSemana() {
+        return cantidadDiasPorSemana;
     }
 
-    public void setCantidadHorasPorSemana(int cantidadHorasPorSemana) {
-        this.cantidadHorasPorSemana = cantidadHorasPorSemana;
+    public void setCantidadDiasPorSemana(int cantidadHorasPorSemana) {
+        this.cantidadDiasPorSemana = cantidadHorasPorSemana;
     }
 
     public String getTurno() {

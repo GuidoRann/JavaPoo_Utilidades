@@ -1,4 +1,4 @@
-package Servicios;
+ package Servicios;
 
 import Entidades.ParDeNumeros;
 
@@ -20,10 +20,10 @@ public class ParDeNumServicio {
         int n2 = (int) Math.round(par.getN2());
         double res;
         
-        if (n1 > n2) {
-           res = Math.pow(n1, n2);
-        }else res = Math.pow(n2, n1);
+        double max = Math.max(n1, n2);
+        double min = Math.min(n1, n2);
         
+        res = Math.pow(max, min);
         
         System.out.println("El resultado de la potencia es: " + res);
     }
@@ -33,9 +33,9 @@ public class ParDeNumServicio {
         double abs2 = Math.abs(par.getN2());
         double res;
         
-        if (abs1 > abs2) {
-            res = Math.sqrt(abs2);
-        } else res = Math.sqrt(abs1);
+        double min = Math.min(abs1, abs2);
+        
+        res = Math.sqrt(min);
         
         System.out.println("La raiz cuadrada del menor numero es: " + res);
     }
