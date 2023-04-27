@@ -2,6 +2,7 @@ package Main;
 
 import Entidades.*;
 import Servicios.*;
+import java.util.Date;
 import java.util.Scanner;
 
 
@@ -48,7 +49,7 @@ public class Main {
                     System.out.println();
                     break;
                 case 5:
-                    nc.unidFrase(text);
+                    nc.unirFrase(text);
                     System.out.println();
                     break;
                 case 6:
@@ -106,7 +107,25 @@ public class Main {
        */
        
        // ------------------------ Ejercicio 4 -------------------------------------
+       /*
+       FechaServicio fs = new FechaServicio();
+       Date fN = fs.fechaNacimiento();
+       Date fA = fs.fechaActual();
        
+       fs.diferencia(fN, fA);
+       */
+       
+       // ------------------------ Ejercicio 5 -------------------------------------
+       /*
+       PersonaService ps = new PersonaService();
+       Persona per = ps.crearPersona();
+       
+       ps.calcularEdad(per);
+       ps.menorQue(per);
+       ps.mostrarPersona(per);
+       */
+       
+       // ------------------------ Ejercicio 6 -------------------------------------
        
     }
 

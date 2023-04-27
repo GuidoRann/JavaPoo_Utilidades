@@ -58,7 +58,7 @@ public class CadenaServicio {
     }
     
     
-    public void unidFrase(Cadena text){
+    public void unirFrase(Cadena text){
         System.out.println("Ingrese un nueva frase para unir con la anterior");
         String nueva = consola.next();
         

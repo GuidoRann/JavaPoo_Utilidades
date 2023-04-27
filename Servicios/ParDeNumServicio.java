@@ -18,8 +18,13 @@ public class ParDeNumServicio {
     public void calcularPotencia(ParDeNumeros par){
         int n1 = (int) Math.round(par.getN1());
         int n2 = (int) Math.round(par.getN2());
+        double res;
         
-        double res = Math.pow(n1, n2);
+        if (n1 > n2) {
+           res = Math.pow(n1, n2);
+        }else res = Math.pow(n2, n1);
+        
+        
         System.out.println("El resultado de la potencia es: " + res);
     }
     
