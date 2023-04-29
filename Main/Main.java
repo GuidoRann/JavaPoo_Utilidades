@@ -12,7 +12,7 @@ public class Main {
         Scanner consola = new Scanner(System.in).useDelimiter("\n");
      
         // ------------------------ Ejercicio 1 -------------------------------------
-        /*  
+        /* 
         CadenaServicio nc = new CadenaServicio();
         Cadena text = nc.crearCadena();
         int op = 0;
@@ -135,7 +135,13 @@ public class Main {
        */
        
        // ------------------------ Ejercicio Extra 1 -------------------------------------
+       /*
+       MesSecreto ms = new MesSecreto();
+       ms.jugar();
+       */
        
+       // ------------------------ Ejercicio Extra 2 -------------------------------------
+                                               
        
     }
 
