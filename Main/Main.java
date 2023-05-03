@@ -133,7 +133,7 @@ public class Main {
        cs.cargarAlumnos(cur);
        cs.calcularGananciaSemanal(cur);
        */
-       
+     
        // ------------------------ Ejercicio Extra 1 -------------------------------------
        /*
        MesSecreto ms = new MesSecreto();
@@ -141,8 +141,10 @@ public class Main {
        */
        
        // ------------------------ Ejercicio Extra 2 -------------------------------------
-                               
-       
+       /*
+       AhorcadoService game = new AhorcadoService();
+       game.juego();
+       */
     }
 
 }

@@ -21,7 +21,7 @@ public class ArregloService {
         for (int i = 0; i < a.length; i++) {
             numerosDouble[i] = a[a.length -1 -i];
         }
-        System.out.println(Arrays.toString(numerosDouble));
+        System.arraycopy(numerosDouble, 0, a, 0, a.length);
     }
     
     public void inicializarB(double[] a, double[] b){
